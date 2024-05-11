@@ -1,0 +1,12 @@
+<div class="list">
+  @for(user of users; track user.id) {
+  <div setBackground class="card" routerLink="userDetails/{{user.id}}">
+    <h4>{{user.first_name }} {{user.last_name}}</h4>
+    <img src={{user.avatar}} alt="alternate">
+    <p>{{user.email}}</p>
+  </div>
+  }
+  @if(users.length === 0) {
+  <h1>No Users</h1>
+  }
+</div>

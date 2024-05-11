@@ -1,0 +1,11 @@
+<app-header (item)="searchUser($event)"></app-header>
+<div class="container">
+    <app-user-list [users]="users"></app-user-list>
+
+    <div class="pagination">
+        <img src="../../assets/images/Group 237.png" alt="Next" (click)="previousPage()">
+        <img src="../../assets/images/Group 236.png" alt="Previous" (click)="nextPage()">
+    </div>
+</div>
+
+<app-spinner *ngIf="isloading"></app-spinner>

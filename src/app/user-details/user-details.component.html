@@ -1,0 +1,12 @@
+<div class="details">
+    <button routerLink="">back</button>
+    <div setBackground class="card">
+        <h2>{{userDetails.first_name}} {{userDetails.last_name}}</h2>
+        <img src={{userDetails.avatar}} alt="">
+        <p>ID: {{userDetails.id}}</p>
+        <p>Email: {{userDetails.email}}</p>
+    </div>
+
+</div>
+
+<app-spinner *ngIf="isloading"></app-spinner>
